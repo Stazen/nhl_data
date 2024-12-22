@@ -5,31 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NHL_Data"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="1200" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="{x:Null}">
-    <Grid Width="1200" Background="#FFEFEFEF" Margin="0,0,0,-6">
+        Title="MainWindow" 
+        Height="500" 
+        Width="1000" 
+        WindowStartupLocation="CenterScreen" 
+        ResizeMode="NoResize" Background="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Left">
+
+    <Grid Width="1000" Background="#FFEFEFEF" >
         <!-- Section 1 -->
-        <Border CornerRadius="20" BorderBrush="#FF00B3FF" BorderThickness="3" Margin="1,1,1000,7">
-            <Grid>
-                <TextBlock Text="Section 1" Foreground="White" FontSize="18" 
-                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Grid>
-        </Border>
+        <Border CornerRadius="20" BorderBrush="#FF00FF1B" BorderThickness="3" Margin="188,0,20,242" Height="213" VerticalAlignment="Bottom"/>
 
         <!-- Section 2 -->
-        <Border CornerRadius="10" BorderBrush="#FF00FF33" BorderThickness="3" Margin="201,0,18,301">
-            <Grid Width="975" Height="300" VerticalAlignment="Top">
-                <TextBlock Text="Section 2" Foreground="White" FontSize="18" 
-                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Grid>
-        </Border>
+        <Border CornerRadius="20" BorderBrush="#FF00B3FF" BorderThickness="3" Margin="3,0,0,5" Width="180" HorizontalAlignment="Left" Height="454" VerticalAlignment="Bottom"/>
 
         <!-- Section 3 -->
-        <Border CornerRadius="10" BorderBrush="#FFFFA400" BorderThickness="3" Margin="200,291,18,7">
-            <Grid Margin="0,0,1,0" Height="300" VerticalAlignment="Top">
-                <TextBlock Text="Section 3" Foreground="White" FontSize="18" 
-                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Grid>
-        </Border>
+        <Border CornerRadius="20" BorderBrush="#FF7D00FF" BorderThickness="3" Margin="188,0,20,5" Height="232" VerticalAlignment="Bottom"/>
+
+
     </Grid>
 
 </Window>
