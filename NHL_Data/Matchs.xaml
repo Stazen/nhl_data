@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="NHL_UI.Matchs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:NHL_UI"
+             mc:Ignorable="d" 
+             d:DesignHeight="850" d:DesignWidth="1100">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.Resources >
+            <Style TargetType="materialDesign:PackIcon">
+                <Setter Property="Width" Value="30"></Setter>
+                <Setter Property="Height" Value="30"></Setter>
+            </Style>
+        </Grid.Resources>
+
+        <Border Grid.Row="0" CornerRadius="0,0,100,100" Margin="100,0,100,0" >
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0.997"/>
+                    <GradientStop Color="White" Offset="0"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid>
+                <DatePicker Name="dp_date" HorizontalAlignment="Left" Margin="100,0,100,0" VerticalAlignment="Center" IsTodayHighlighted="True" Width="130" FontSize="17" Height="30" FontWeight="Bold" DisplayDate="01-01-2024"/>
+                <ComboBox Name="cb_sport" HorizontalAlignment="Center" Width="130" VerticalAlignment="Center" FontSize="17" FontWeight="Bold">
+                    <Label Content="Football" FontSize="17"  FontWeight="Bold"/>
+                    <Label Content="Hockey sur glace" FontSize="17"  FontWeight="Bold"/>
+                    <Label Content="Basket" FontSize="17"  FontWeight="Bold"/>
+                </ComboBox>
+                <ComboBox Name="cb_ligue" HorizontalAlignment="Right" Margin="100,0,100,0" Width="130" VerticalAlignment="Center" FontSize="17" FontWeight="Bold">
+                    <Label Content="Ligue 1" FontSize="17" FontWeight="Bold"/>
+                    <Label Content="Ligue 2" FontSize="17" FontWeight="Bold"/>
+                    <Label Content="NHL" FontSize="17" FontWeight="Bold"/>
+                </ComboBox>
+                <Label Content="Date" HorizontalAlignment="Left" Margin="140,5,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+                <Label Content="Sport" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+                <Label Content="Ligue" HorizontalAlignment="Right" Margin="0,5,140,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+            </Grid>
+        </Border>
+
+        <Border Grid.Row="1" CornerRadius="100,100,100,100" Margin="50,50,50,50" BorderBrush="#FF59595A" BorderThickness="10">
+
+        </Border>
+
+
+    </Grid>
+</UserControl>

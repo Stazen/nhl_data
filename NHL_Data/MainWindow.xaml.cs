@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using NHL_UI;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +20,17 @@ namespace NHL_Data
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Windows_Loaded(object sender, RoutedEventArgs e)
+        {
+            MenuPagaes.Children.Clear();
+            MenuPagaes.Children.Add(new Matchs());
+        }
+
+        private void ListViewItem_Selected(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
