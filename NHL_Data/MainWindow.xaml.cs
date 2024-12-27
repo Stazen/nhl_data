@@ -30,5 +30,10 @@ namespace NHL_Data
             MenuPagaes.Children.Clear();
             MenuPagaes.Children.Add(new Matchs());
         }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }
