@@ -19,13 +19,7 @@
             </Style>
         </Grid.Resources>
 
-        <Border Grid.Row="0" CornerRadius="0,0,100,100" Margin="100,0,100,0" >
-            <Border.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="White" Offset="0.997"/>
-                    <GradientStop Color="White" Offset="0"/>
-                </LinearGradientBrush>
-            </Border.Background>
+        <Border Grid.Row="0" CornerRadius="0,0,100,100" Margin="100,0,100,0" Background="#FF59595A" >
             <Grid>
                 <DatePicker Name="dp_date" HorizontalAlignment="Left" Margin="100,0,100,0" VerticalAlignment="Center" IsTodayHighlighted="True" Width="130" FontSize="17" Height="30" FontWeight="Bold" DisplayDate="01-01-2024"/>
                 <ComboBox Name="cb_sport" HorizontalAlignment="Center" Width="130" VerticalAlignment="Center" FontSize="17" FontWeight="Bold">
@@ -39,8 +33,8 @@
                     <Label Content="NHL" FontSize="17" FontWeight="Bold"/>
                 </ComboBox>
                 <Label Content="Date" HorizontalAlignment="Left" Margin="140,5,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-                <Label Content="Sport" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-                <Label Content="Ligue" HorizontalAlignment="Right" Margin="0,5,140,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+                <Label Content="Sports" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+                <Label Content="Leagues" HorizontalAlignment="Right" Margin="0,5,140,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
             </Grid>
         </Border>
 

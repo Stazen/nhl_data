@@ -1,4 +1,6 @@
 ﻿using NHL_UI;
+using System.Collections.ObjectModel;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -17,6 +19,7 @@ namespace NHL_Data
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -26,11 +29,6 @@ namespace NHL_Data
         {
             MenuPagaes.Children.Clear();
             MenuPagaes.Children.Add(new Matchs());
-        }
-
-        private void ListViewItem_Selected(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

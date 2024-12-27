@@ -30,96 +30,74 @@
                 </Grid.Resources>
                 <Grid Grid.Column="0" Background="#FF59595A">
                     <ListView Margin="0 15">
-                        <ListViewItem HorizontalAlignment="Center" Margin="0" Selected="ListViewItem_Selected">
-                            <Button HorizontalAlignment="Left"
-                                        BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}">
-                                <StackPanel Margin="-5">
-                                    <materialDesign:PackIcon Kind="AccessPoint">
-
-                                    </materialDesign:PackIcon>
-                                </StackPanel>
+                        <!--Button On Live-->
+                        <ListViewItem HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0">
+                            <Button HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}"
+                                    IsHitTestVisible="False">
+                                <materialDesign:PackIcon Kind="AccessPoint"/>
                             </Button>
                         </ListViewItem>
-                        <ListViewItem HorizontalAlignment="Center" Margin="0">
-                            <Button HorizontalAlignment="Left" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}">
-                                <StackPanel Margin="-5">
-                                    <materialDesign:PackIcon Kind="Star">
-
-                                    </materialDesign:PackIcon>
-                                </StackPanel>
+                        <!--Button Favoris-->
+                        <ListViewItem HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0">
+                            <Button HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}"
+                                    IsHitTestVisible="False">
+                                <materialDesign:PackIcon Kind="Star"/>
                             </Button>
                         </ListViewItem>
-                        <ListViewItem HorizontalAlignment="Center" Margin="0">
-                            <Button HorizontalAlignment="Left" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}">
-                                <StackPanel Margin="-5">
-                                    <materialDesign:PackIcon Kind="AccountCircle">
-
-                                    </materialDesign:PackIcon>
-                                </StackPanel>
+                        <!--Button Account-->
+                        <ListViewItem HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0">
+                            <Button HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}"
+                                    IsHitTestVisible="False">
+                                <materialDesign:PackIcon Kind="AccountCircle"/>
                             </Button>
                         </ListViewItem>
-                        <ListViewItem HorizontalAlignment="Center" Margin="0">
-                            <Button HorizontalAlignment="Left" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}">
-                                <StackPanel Margin="-5">
-                                    <materialDesign:PackIcon Kind="Bell">
-
-                                    </materialDesign:PackIcon>
-                                </StackPanel>
+                        <!--Button Notifications-->
+                        <ListViewItem HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0">
+                            <Button HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}"
+                                    IsHitTestVisible="False">
+                                <materialDesign:PackIcon Kind="Bell"/>
                             </Button>
                         </ListViewItem>
-                        <ListViewItem HorizontalAlignment="Center" Margin="0">
-                            <Button HorizontalAlignment="Left" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}">
-                                <StackPanel Margin="-5">
-                                    <materialDesign:PackIcon Kind="CheckDecagram">
-
-                                    </materialDesign:PackIcon>
-                                </StackPanel>
+                        <!--Button Checked-->
+                        <ListViewItem HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0">
+                            <Button HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}"
+                                    IsHitTestVisible="False">
+                                <materialDesign:PackIcon Kind="CheckDecagram"/>
                             </Button>
                         </ListViewItem>
-                        <ListViewItem HorizontalAlignment="Center" Margin="0">
-                            <Button HorizontalAlignment="Left" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}">
-                                <StackPanel Margin="-5">
-                                    <materialDesign:PackIcon Kind="DiamondStone">
-
-                                    </materialDesign:PackIcon>
-                                </StackPanel>
+                        <!--Button Premium-->
+                        <ListViewItem HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0">
+                            <Button HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}"
+                                    IsHitTestVisible="False">
+                                <materialDesign:PackIcon Kind="DiamondStone"/>
                             </Button>
                         </ListViewItem>
-                        <ListViewItem HorizontalAlignment="Center" Margin="0">
-                            <Button HorizontalAlignment="Left" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}">
-                                <StackPanel Margin="-5">
-                                    <materialDesign:PackIcon Kind="NavigationOutline">
-
-                                    </materialDesign:PackIcon>
-                                </StackPanel>
+                        <!--Button Navigation-->
+                        <ListViewItem HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0">
+                            <Button HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}"
+                                    IsHitTestVisible="False">
+                                <materialDesign:PackIcon Kind="NavigationOutline"/>
                             </Button>
                         </ListViewItem>
-                        <ListViewItem HorizontalAlignment="Center" Margin="0">
-                            <Button HorizontalAlignment="Left" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}">
-                                <StackPanel Margin="-5">
-                                    <materialDesign:PackIcon Kind="SecurityAccount">
-
-                                    </materialDesign:PackIcon>
-                                </StackPanel>
+                        <!--Button Security Account-->
+                        <ListViewItem HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0">
+                            <Button HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}"
+                                    IsHitTestVisible="False">
+                                <materialDesign:PackIcon Kind="SecurityAccount"/>
                             </Button>
                         </ListViewItem>
-                        <ListViewItem HorizontalAlignment="Center" Margin="0 10 0 0">
-                            <Button HorizontalAlignment="Left" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}">
-                                <StackPanel Margin="-5">
-                                    <materialDesign:PackIcon Kind="Cogs">
-
-                                    </materialDesign:PackIcon>
-                                </StackPanel>
+                        <!--Button Parameters-->
+                        <ListViewItem HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 10 0 0">
+                            <Button HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}"
+                                    IsHitTestVisible="False">
+                                <materialDesign:PackIcon Kind="Cogs"/>
                             </Button>
                         </ListViewItem>
-
-                        <ListViewItem HorizontalAlignment="Center" Margin="0 10 0 0">
-                            <Button HorizontalAlignment="Left" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}">
-                                <StackPanel Margin="-5">
-                                    <materialDesign:PackIcon Kind="ExitToApp">
-
-                                    </materialDesign:PackIcon>
-                                </StackPanel>
+                        <!--Button Exit-->
+                        <ListViewItem HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 10 0 0">
+                            <Button HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Style="{StaticResource MaterialDesignFloatingActionButton}"
+                                    IsHitTestVisible="False">
+                                <materialDesign:PackIcon Kind="ExitToApp"/>
                             </Button>
                         </ListViewItem>
                     </ListView>
