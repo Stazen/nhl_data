@@ -7,10 +7,25 @@
              xmlns:local="clr-namespace:NHL_UI"
              mc:Ignorable="d" 
              d:DesignHeight="850" d:DesignWidth="1100">
+    <UserControl.Resources>
+        <Style TargetType="DatePicker" x:Key="CustomDatePickerStyle">
+            <Setter Property="Background" Value="#FF59595A"/>
+            <Setter Property="BorderBrush" Value="#FF59595A"/>
+            <Setter Property="CalendarStyle">
+                <Setter.Value>
+                    <Style TargetType="Calendar">
+                        <Setter Property="Background" Value="#FF59595A"/>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.3*"/>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="Auto"/> <!-- Pour la timeline -->
+            <RowDefinition Height="2*"/> <!-- Pour le Border principal -->
         </Grid.RowDefinitions>
         <Grid.Resources >
             <Style TargetType="materialDesign:PackIcon">
@@ -19,28 +34,52 @@
             </Style>
         </Grid.Resources>
 
-        <Border Grid.Row="0" CornerRadius="0,0,100,100" Margin="100,0,100,0" Background="#FF59595A" >
-            <Grid>
-                <DatePicker Name="dp_date" HorizontalAlignment="Left" Margin="100,0,100,0" VerticalAlignment="Center" IsTodayHighlighted="True" Width="130" FontSize="17" Height="30" FontWeight="Bold" DisplayDate="01-01-2024"/>
-                <ComboBox Name="cb_sport" HorizontalAlignment="Center" Width="130" VerticalAlignment="Center" FontSize="17" FontWeight="Bold">
-                    <Label Content="Football" FontSize="17"  FontWeight="Bold"/>
-                    <Label Content="Hockey sur glace" FontSize="17"  FontWeight="Bold"/>
-                    <Label Content="Basket" FontSize="17"  FontWeight="Bold"/>
-                </ComboBox>
-                <ComboBox Name="cb_ligue" HorizontalAlignment="Right" Margin="100,0,100,0" Width="130" VerticalAlignment="Center" FontSize="17" FontWeight="Bold">
-                    <Label Content="Ligue 1" FontSize="17" FontWeight="Bold"/>
-                    <Label Content="Ligue 2" FontSize="17" FontWeight="Bold"/>
-                    <Label Content="NHL" FontSize="17" FontWeight="Bold"/>
-                </ComboBox>
-                <Label Content="Date" HorizontalAlignment="Left" Margin="140,5,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-                <Label Content="Sports" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-                <Label Content="Leagues" HorizontalAlignment="Right" Margin="0,5,140,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-            </Grid>
-        </Border>
-
         <Border Grid.Row="1" CornerRadius="100,100,100,100" Margin="50,50,50,50" BorderBrush="#FF59595A" BorderThickness="10">
-
         </Border>
+        
+        <!-- Rectangle de timeline en dehors et au-dessus du Border -->
+        <Grid Grid.Row="1" Margin="70,10,70,704">
+            <Rectangle Fill="#E0E0E0" RadiusX="15" RadiusY="15" Height="2" />
+
+            <!-- Cercles des jours -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid Margin="15,0">
+                    <Ellipse Width="24" Height="24" Fill="#FFFFFF" Stroke="#BBBBBB" StrokeThickness="1"/>
+                    <TextBlock Text="15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12"/>
+                </Grid>
+
+                <Grid Margin="15,0">
+                    <Ellipse Width="24" Height="24" Fill="#FFFFFF" Stroke="#BBBBBB" StrokeThickness="1"/>
+                    <TextBlock Text="16" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12"/>
+                </Grid>
+
+                <!-- Jour actuel (surbrillance) -->
+                <Grid Margin="15,0">
+                    <Ellipse Width="28" Height="28" Fill="#AAAAAA"/>
+                    <TextBlock Text="17" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Foreground="White" FontWeight="Bold"/>
+                </Grid>
+
+                <Grid Margin="15,0">
+                    <Ellipse Width="24" Height="24" Fill="#FFFFFF" Stroke="#BBBBBB" StrokeThickness="1"/>
+                    <TextBlock Text="18" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12"/>
+                </Grid>
+
+                <Grid Margin="15,0">
+                    <Ellipse Width="24" Height="24" Fill="#FFFFFF" Stroke="#BBBBBB" StrokeThickness="1"/>
+                    <TextBlock Text="19" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12"/>
+                </Grid>
+
+                <Grid Margin="15,0">
+                    <Ellipse Width="24" Height="24" Fill="#FFFFFF" Stroke="#BBBBBB" StrokeThickness="1"/>
+                    <TextBlock Text="20" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12"/>
+                </Grid>
+
+                <Grid Margin="15,0">
+                    <Ellipse Width="24" Height="24" Fill="#FFFFFF" Stroke="#BBBBBB" StrokeThickness="1"/>
+                    <TextBlock Text="21" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12"/>
+                </Grid>
+            </StackPanel>
+        </Grid>
 
 
     </Grid>
